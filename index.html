@@ -15,6 +15,9 @@
 
     <!-- CSS-->
     <link rel="stylesheet" href="style.css" />
+
+    <!--Icons-->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
 
   <body>
@@ -23,7 +26,7 @@
       <h1>My Budget</h1>
     </header>
 
-    <main class="container budgets">
+    <main class="container budgets hidden">
       <div class="budget__card">
         <h2 class="budhet__name">Makan & Minum</h2>
         <p class="budget__amount">Rp 968.000</p>
@@ -35,6 +38,27 @@
         <p class="budget__total">Total: Rp 1.000.000</p>
       </div>
       <button class="add__budget__btn">+</button>
+    </main>
+
+    <main id="budget_details" class="container">
+      <button class="back__home">
+        <i class="ph ph-caret-left icon__back"></i>
+        Halaman Utama
+      </button>
+
+      <div class="budget__card">
+        <div class="">
+          <h2 class="budhet__name">Makan & Minum</h2>
+          <p class="budget__amount">Rp 968.000</p>
+          <p class="budget__total">Total: Rp 1.000.000</p>
+        </div>
+
+        <div class="icon">
+          <i class="ph ph-pencil-line"></i>
+        </div>
+      </div>
+
+      <button class="add__spent__btn"><span>+</span> Tambah Pengeluaran</button>
     </main>
   </body>
 </html>
