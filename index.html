@@ -26,19 +26,25 @@
       <h1>My Budget</h1>
     </header>
 
-    <main class="container budgets hidden">
+
+    <!-- Budget 1st Page  -->
+
+    <main id="budgets" class="container budgets hidden">
       <div class="budget__card">
-        <h2 class="budhet__name">Makan & Minum</h2>
+        <h2 class="budget__name">Makan & Minum</h2>
         <p class="budget__amount">Rp 968.000</p>
         <p class="budget__total">Total: Rp 1.000.000</p>
       </div>
       <div class="budget__card">
-        <h2 class="budhet__name">Makan & Minum</h2>
+        <h2 class="budget__name">Makan & Minum</h2>
         <p class="budget__amount">Rp 968.000</p>
         <p class="budget__total">Total: Rp 1.000.000</p>
       </div>
       <button class="add__budget__btn">+</button>
     </main>
+
+
+    <!-- Budget Details (after click on budget card, can click back home btn) -->
 
     <main id="budget_details" class="container">
       <button class="back__home">
@@ -48,7 +54,7 @@
 
       <div class="budget__card">
         <div class="">
-          <h2 class="budhet__name">Makan & Minum</h2>
+          <h2 class="budget__name">Makan & Minum</h2>
           <p class="budget__amount">Rp 968.000</p>
           <p class="budget__total">Total: Rp 1.000.000</p>
         </div>
@@ -109,7 +115,9 @@
       </div>
     </main>
 
-    <div id="add__budget__form" class="modal hidden">
+    <!-- Modal Form Budget -->
+
+    <div id="budget__form" class="modal hidden">
       <div class="card">
         <div class="modal__card__heading">
           <h4>Tambah Budget</h4>
@@ -126,7 +134,10 @@
           <button>Simpan</button>
         </form>
       </div>
-    <div id="add__spent__form" class="modal hidden">
+
+      <!-- Modal Form Pengeluaran/Spent -->
+
+    <div id="spent_form" class="modal hidden">
       <div class="card">
         <div class="modal__card__heading">
           <h4>Tambah Pengeluaran</h4>
@@ -146,5 +157,6 @@
         </form>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
